@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Titanic Ship Prediction</title>
+	<style>
+		body {
+		    background-image: url("https://thumbs.dreamstime.com/b/titanic-iceberg-original-oil-painting-ocean-night-canvas-full-moon-stars-modern-impressionism-200487951.jpg");
+		    background-repeat: no-repeat;
+		    background-size: cover;
+        }
+        h1, label {
+            text-align: center;
+        } 
+		
+    </style>
+<b style="font-size:x-large;background-color: rgb(150, 244, 244);">
+</head>
+<body>
+        
+     <h1 style="color: rgb(253, 0, 0);background-color: black;">Titanic Ship Prediction</h1>
+     <form method="GET" action="/get_pred">
+
+        <label style="color: brown;">Passenger Id         :</label>
+        <input type="text" name="PassengerId">
+        </select>
+   <br>
+   <br>
+   <label style="color: brown;"><b>P Class        :</b></label>
+   <select name="Pclass">
+       <option value="1">One</option>
+       <option value="2">Two</option>
+       <option value="3">Three</option>
+        </select>
+    </div>
+        <br>
+        <br>
+        <label style="color: brown;">Ticket        :</label>
+        <input type="text" name="Ticket">
+        </select>
+   <br>
+   <br>
+        <label style="color: brown;"><b>Gender     :</b></label>
+        <select name="Gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br>
+        <br>
+             <label style="color: brown;">Age      :</label>
+             <input type="text" name="Age">
+             </select>
+        <br>
+        <br>
+        <label style="color: brown;">SIB SP       :</label>
+        <label>Zero:</label> <input type = "radio" name="SibSp" value = "0">
+        <label>One:</label> <input type = "radio" name="SibSp" value = "1">
+        <label>Two:</label> <input type = "radio" name="SibSp" value = "2">
+        <label>Three:</label> <input type = "radio" name="SibSp" value = "3">
+        <label>Four:</label> <input type = "radio" name="SibSp" value = "4">
+        <label>Five:</label> <input type = "radio" name="SibSp" value = "5">
+        <label>Eight:</label> <input type = "radio" name="SibSp" value = "8">
+        </select>
+
+        <br>
+        <br>
+        <div class="field-group">
+            <label style="color: brown;">Parch      :</label>
+            <input type="text" name="Parch" class="input-field" placeholder="Enter no. bet 1 - 6" autocomplete="off">
+
+        <br>
+        <br>
+             <label style="color: brown;">Fare       :</label>
+             <input type="text" name="Fare">
+             </select>
+        <br>
+        <br>
+             <label style="color: brown;">Embarked      :</label>
+             <select name="Embarked">
+                <option value="S">S</option>
+                <option value="C">C</option>
+                <option value="Q">Q</option>
+             
+             </select>
+         <br>
+         <br>
+	<input type = "submit" value = "SUBMIT">
+        
+        <br>
+        <br>
+
+    </b>
+	</form>
+	<p style="font-size: xx-large;border-color: aliceblue;"><b>{{result}}</b></p>
+        
+</body>
+</html>
